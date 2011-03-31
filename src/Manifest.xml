@@ -1,0 +1,47 @@
+<package>
+	<name>dotCover Results</name>
+  <description>dotCover results display</description>
+  <type>Plugin</type>
+  
+  <folders>
+    <folder>
+      <location>xsl</location>
+      <files>
+        <file>dotCover.xsl</file>
+      </files>
+    </folder>
+    <folder>
+      <location>javascript</location>
+      <files>
+        <file>dotCover.js</file>
+      </files>
+    </folder>
+    <folder>
+      <location>images</location>
+      <files>
+        <file>dotcover-expand.png</file>
+        <file>dotcover-collapse.png</file>
+      </files>
+    </folder>
+  </folders>
+
+  <configuration>
+    <setting>
+      <path>/dashboard/plugins/buildPlugins/buildReportBuildPlugin/xslFileNames</path>
+      <filter>.='xsl\dotCover.xsl'</filter>
+      <name>xslFile</name>
+      <value>xsl\dotCover.xsl</value>
+    </setting>
+    <setting>
+      <path>/dashboard/plugins/buildPlugins</path>
+      <filter>@xslFileName='xsl\dotCover.xsl'</filter>
+      <name>xslReportBuildPlugin</name>
+      <attributes>
+        <attribute name="description" value="DotCover Details"/>
+        <attribute name="actionName" value="DotCoverDetailsBuildReport"/>
+        <attribute name="xslFileName" value="xsl\dotCover.xsl"/>
+      </attributes>
+    </setting>
+  </configuration>
+  
+</package>
