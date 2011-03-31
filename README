@@ -1,1 +1,3 @@
 A JetBrains dotCover (http://jetbrains.com/dotcover/) plugin package for CruiseControl.NET
+
+To use, just upload the dotCover.zip file as a Package to your admin dashboard.  See the example files for CCNet config files to use.  You'll need NAnt, NUnit (or another), and dotCover v1.1 to get the code coverage results merged into the CCNet output XML.

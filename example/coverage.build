@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<project name="Example" default="coverage" basedir="." xmlns="http://nant.sf.net/release/0.86-beta1/nant.xsd">
+
+  <target name="coverage">
+    <echo message="------------------------------- COVERAGE TESTS -------------------------------------" />
+
+    <exec program="C:\Program Files\JetBrains\dotCover\v1.1\Bin\dotCover.exe" failonerror="false">
+      <arg value="analyse" />
+      <arg value="C:\path\to\config\coverage.xml" />
+    </exec>
+    
+  </target>
+  
+</project>

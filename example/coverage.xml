@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<AnalyseParams>
+  <Executable>C:\Program Files\NUnit 2.5.9\bin\net-2.0\nunit-console.exe</Executable>
+  <Arguments>C:\path\to\assembly\assembly.dll</Arguments>
+  <Output>C:\path\to\config\output\results.xml</Output>
+</AnalyseParams>

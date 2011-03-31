@@ -1,0 +1,22 @@
+<project name="Example Project">
+
+  <tasks>
+
+    <!-- RUN: coverage.build -->
+    <nant>
+      <executable>C:\Program Files\nant-0.86-beta1\bin\nant.exe</executable>
+      <baseDirectory>C:\path\to\config</baseDirectory>
+      <buildFile>coverage.build</buildFile>
+    </nant>
+    <!-- END RUN -->
+    
+    <!-- MERGE dotcover: results.xml -->
+    <merge>
+      <files>
+        <file>C:\path\to\config\output\results.xml</file>
+      </files>
+    </merge> 
+    
+  </tasks>
+  
+</project>
